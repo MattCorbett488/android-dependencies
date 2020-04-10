@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1002189037961",
+    "firebase_url": "https://android-dependencies.firebaseio.com",
+    "project_id": "android-dependencies",
+    "storage_bucket": "android-dependencies.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1002189037961:android:7dddb300d5fe15db084158",
+        "android_client_info": {
+          "package_name": "com.matthiascorbetticini.androiddependencies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1002189037961-4pvc12b6fitjbrof7e6pl6publ3fha5n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUJ-bKfOR0y07yN8ff3Pv74jK2VFRp_-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1002189037961-4pvc12b6fitjbrof7e6pl6publ3fha5n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

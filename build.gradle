@@ -4,6 +4,33 @@ buildscript {
     ext {
         buildToolsVersion = "3.6.2"
         kotlinVersion = "1.3.71"
+        espressoVersion = "3.2.0"
+        
+        //Networking/Image Loading
+        retrofitVersion = "2.7.2"
+        okHttpVersion = "4.5.0"
+        
+        glideVersion = "4.11.0"
+        
+        moshiVersion = "1.9.2"
+        
+        coroutinesVersion = "1.3.5"
+        
+        //DI
+        daggerVersion = "2.23.2"
+        koinVersion = "2.1.5"
+
+        //Architecture
+        lifecycleVersion = "2.2.0"
+        archVersion = "2.1.0"
+
+        navVersion = "2.2.1"
+
+        pagingVersion = "2.1.2"
+
+        roomVersion = "2.2.5"
+
+        workVersion = "2.3.4"
     }
 
     repositories {
