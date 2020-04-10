@@ -3,6 +3,7 @@ apply plugin: "kotlin-android"
 apply plugin: "kotlin-kapt"
 apply plugin: "kotlin-android-extensions"
 apply plugin: "io.fabric"
+apply plugin: "io.gitlab.arturbosch.detekt"
 
 android {
     compileSdkVersion 29
@@ -268,6 +269,19 @@ dependencies {
     //Web - https://developer.android.com/training/testing/espresso/web
     androidTestImplementation "androidx.test.espresso:espresso-web:$espressoVersion"
     
+}
+
+detekt {
+    failFast = true // fail build on any finding
+    buildUponDefaultConfig = true // preconfigure defaults
+    config = files("$projectDir/config/detekt.yml") // point to your custom config defining rules to run, overwriting default behavior
+    baseline = file("$projectDir/config/baseline.xml") // a way of suppressing issues before introducing detekt
+
+    reports {
+        html.enabled = true // observe findings in your browser with structure and code snippets
+        xml.enabled = false // checkstyle like format mainly for integrations like Jenkins
+        txt.enabled = false // similar to the console output, contains issue signature to manually edit baseline files
+    }
 }
 
 apply plugin: "com.google.gms.google-services"
